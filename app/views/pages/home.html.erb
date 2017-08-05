@@ -1,2 +1,65 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="navbar navbar-default">
+  <div class="container d-flex justify-content-between">
+    <button type="button" class="btn btn-default navbar-btn"><%= link_to "Home", pages_home_path %></button>
+		<button type="button" class="btn btn-default navbar-btn"><%= link_to "Inventory", pages_inventory_path %></button>
+		<button type="button" class="btn btn-default navbar-btn"><%= link_to "Financing", pages_financing_path %></button>
+		<button type="button" class="btn btn-default navbar-btn"><%= link_to "Contact Us", pages_contact_path %></button>
+		<button type="button" class="btn btn-default navbar-btn"><%= link_to "About Us", pages_about_path %></button>
+  </div>
+</div>
+
+<div class="container-fluid">
+	<div class="jumbotron">
+	  <h1>Welcome to Main Auto</h1>
+	  <p> Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+	  <p><a class="btn btn-danger btn-lg" href="/pages/about" role="button">About Us!</a></p>
+	</div>
+</div>
+
+<div class="container-fluid">
+	<div class="row">
+	  <div class="col-md-3">
+	    <div class="thumbnail">
+	      <img src="http://via.placeholder.com/250x150" alt="...">
+	      <div class="caption">
+	        <h3>Honda Accord</h3>
+	        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum</p>
+	        <p><a href="/pages/inventory" class="btn btn-danger" role="button">Check it out!</a></p>
+	      </div>
+	    </div>
+	  </div>
+
+	  <div class="col-md-3">
+	    <div class="thumbnail">
+	      <img src="http://via.placeholder.com/250x150" alt="...">
+	      <div class="caption">
+	        <h3>Honda Accord</h3>
+	        <p>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur</p>
+	        <p><a href="/pages/inventory" class="btn btn-danger" role="button">Check it out!</a></p>
+	      </div>
+	    </div>
+	  </div>
+
+	  <div class="col-md-3">
+	    <div class="thumbnail">
+	      <img src="http://via.placeholder.com/250x150" alt="...">
+	      <div class="caption">
+	        <h3>Honda Accord</h3>
+	        <p>Et harum quidem rerum facilis est et expedita distinctio.</p>
+	        <p><a href="/pages/inventory" class="btn btn-danger" role="button">Check it out!</a></p>
+	      </div>
+	    </div>
+	  </div>
+
+	  <div class="col-md-3">
+	    <div class="thumbnail">
+	      <img src="http://via.placeholder.com/250x150" alt="...">
+	      <div class="caption">
+	        <h3>Honda Accord</h3>
+	        <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus</p>
+	        <p><a href="/pages/inventory" class="btn btn-danger" role="button">Check it out!</a></p>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+</div>
