@@ -11,8 +11,8 @@
   </head>
 
   <body>
-    <!-- <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p> -->
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
 
 
     <nav class="navbar navbar-toggleable-sm navbar-inverse fixed-top bg-inverse">
@@ -47,6 +47,15 @@
       </div>
     </nav>
     
+
+
+    <% if current_user %>
+      <%= link_to "Logout", destroy_user_session_path, method: :delete %>
+    <% else %>
+      <%= link_to "Register", new_user_registration_path %>
+      <%= link_to "Login", new_user_session_path %>
+    <% end %>
+
     <%= yield %>
 
     <hr>
