@@ -1,4 +1,5 @@
 @import "bootstrap";
+@import "font-awesome";
 
 /* GLOBAL STYLES
 -------------------------------------------------- */
@@ -95,3 +96,13 @@ body {
 .auth-links {
  margin-left: 600px;
 }
+
+.social_links li {
+  font-size: 2.5em;
+}
+
+.col-right li {
+  flex: auto;
+  float: right;
+}
+
